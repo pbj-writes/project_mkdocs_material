@@ -1,5 +1,3 @@
 # filepath: /Users/pbj/repos/mkdocs-material-project/requirements.txt
 mkdocs-material
 mkdocs-macros-plugin
-mkdocs-material-plugin.search
-mkdocs-material-plugin.social

@@ -50,7 +50,6 @@ plugins:
   - privacy
   - search
   - social
-
   - macros:
       include_yaml:
         - product_names.yaml
