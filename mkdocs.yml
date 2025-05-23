@@ -1,7 +1,10 @@
-site_name: "Project: Advanced Docs-as-Code"
+site_name: "Project: Docs-as-Code"
 
 theme:
   name: material
+  icon:
+    repo: fontawesome/brands/github
+    view: material/eye
   font:
     text: Roboto
   favicon: assets/favicon.ico
@@ -31,7 +34,6 @@ theme:
         icon: material/brightness-4
         name: Switch to system preference
   features:
-    - navigation.tabs
     - navigation.expand
     - navigation.top
     - navigation.footer
@@ -42,11 +44,17 @@ theme:
     - navigation.search.suggest
     - search.suggest
     - search.highlight
+    - content.action.view
 
 plugins:
   - privacy
   - search
   - social
+
+  - macros:
+      include_yaml:
+        - product_names.yaml
+      include_dir: include
 
 extra:
   generator: false
@@ -55,12 +63,30 @@ extra:
       link: https://github.com/pbj-writes
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/pbjwrites/
+  header1: Reuse
+  productName: pbjStand
+
+extra_css:
+  - extra.css
 
 nav:
-  - Home: 
+
     - index.md
     - Reuse: reuse.md
     - Web Stuff: web_stuff.md
     - Doc Linting: doc_linting.md
 
 copyright: ©PBJ
+
+repo_url: https://github.com/pbj-writes/project_mkdocs_material
+repo_name: pbj-writes/project_mkdocs_material
+edit_uri: edit/main/docs/
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences

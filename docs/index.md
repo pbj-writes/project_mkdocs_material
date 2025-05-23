@@ -1,20 +1,10 @@
----
-title: "Project: Docs-as-code"
-description: Advanced Use Cases
----
+# What's this?
 
-# Summary
+This is one of my portfolio projects.
 
-You are here because you want to see some advanced stuff. You'll see:
+I'm showing off advanced stuff including:
 
-- Reuse
-- Doc Linting
-- Advanced Web Features
-- i18n/l20n
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+- Reuse ✅
+- Doc Linting (todo)
+- Advanced Web Features (todo)
+- i18n/l20n (todo)
