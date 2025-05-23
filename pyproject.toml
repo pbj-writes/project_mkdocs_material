@@ -1,0 +1,4 @@
+imaging = [
+  "pillow~=10.2",
+  "cairosvg~=2.6"
+]
