@@ -31,4 +31,8 @@ jobs:
                 mkdocs-macros-plugin \
                 cairosvg \
                 pillow \
+      - name: Cleanup previous deployment
+        run: |
+          git branch -D gh-pages || true
+          git push origin --delete gh-pages || true                
       - run: mkdocs gh-deploy --force
