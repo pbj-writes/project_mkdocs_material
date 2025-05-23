@@ -26,7 +26,7 @@ extra:
 Use of the variable on this page.
 
 ```text
-Let's make up a product. Let's call it, {{ "{{ productName }}" }}.
+I'll make up a product. I'll call it, {{ "{{ productName }}" }}.
 ```
 
 !!! check-work "Check My Work"
@@ -35,7 +35,7 @@ Let's make up a product. Let's call it, {{ "{{ productName }}" }}.
 
 ## Product Names (Multiple)
 
-Now, I have two (or more) products. Let's call them:
+Now, I have two (or more) products. I'll call them:
 
 - {{ productName1 }}
 - {{ productName2 }}
@@ -65,7 +65,7 @@ plugins:
 Use of the variable on this page.
 
 ```text
-Now, I have two (or more) products. Let's call them:
+Now, I have two (or more) products. I'll call them:
 
 - {{ "{{ productName1 }}" }}
 - {{ "{{ productName2 }}" }}
