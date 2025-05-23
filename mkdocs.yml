@@ -1,0 +1,66 @@
+site_name: "Project: Advanced Docs-as-Code"
+
+theme:
+  name: material
+  font:
+    text: Roboto
+  favicon: assets/favicon.ico
+  logo: assets/logo.png
+  palette:
+
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      primary: deep purple
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      primary: deep purple
+      scheme: default 
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      primary: deep purple
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+  features:
+    - navigation.tabs
+    - navigation.expand
+    - navigation.top
+    - navigation.footer
+    - navigation.sections
+    - navigation.instant
+    - navigation.tracking
+    - navigation.search.highlight
+    - navigation.search.suggest
+    - search.suggest
+    - search.highlight
+
+plugins:
+  - privacy
+  - search
+  - social
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/pbj-writes
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/pbjwrites/
+
+nav:
+  - Home: 
+    - index.md
+    - Reuse: reuse.md
+    - Web Stuff: web_stuff.md
+    - Doc Linting: doc_linting.md
+
+copyright: ©PBJ
