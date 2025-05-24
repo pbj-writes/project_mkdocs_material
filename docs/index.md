@@ -9,7 +9,7 @@ I'm showing off advanced stuff including:
 - Doc Linting (todo)
 - i18n/l20n (todo)
 
-## Site tooling
+## Site Tooling
 
 - Mkdocs ➡️ static site generator
 - Material ➡️ theme
@@ -18,5 +18,3 @@ I'm showing off advanced stuff including:
 - GitHub Actions ➡️ automation
 - GitHub Pages ➡️ hosting
 - Vale ➡️ doc style linting
-
-The dog is bitten by the cat.
