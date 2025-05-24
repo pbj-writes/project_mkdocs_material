@@ -19,6 +19,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Required to fetch all history for comparing changes
 
       - name: Install Vale
         run: |
@@ -26,27 +28,17 @@ jobs:
           tar -xf vale_3.11.2_Linux_64-bit.tar.gz
           sudo mv vale /usr/local/bin/
 
-      - name: Get changed files
-        id: changed
-        run: |
-          if [ "${{ github.event_name }}" = "pull_request" ]; then
-            git fetch origin ${{ github.base_ref }}
-            git diff --name-only origin/${{ github.base_ref }}...${{ github.sha }} | grep '\.md$' || true
-          else
-            git diff --name-only HEAD~1 | grep '\.md$' || true
-          fi
-        shell: bash
+      - name: Sync Vale styles
+        run: vale sync
 
-      - name: Run Vale on changed files
+      - name: Run Vale
         run: |
-          FILES=$(if [ "${{ github.event_name }}" = "pull_request" ]; then
-            git fetch origin ${{ github.base_ref }}
-            git diff --name-only origin/${{ github.base_ref }}...${{ github.sha }} | grep '\.md$' || true
+          git fetch origin ${{ github.base_ref }}
+          CHANGED_FILES=$(git diff --name-only --diff-filter=d origin/${{ github.base_ref }}...HEAD | grep '\.md$' || true)
+          if [ -n "$CHANGED_FILES" ]; then
+            echo "Checking files:"
+            echo "$CHANGED_FILES"
+            vale $CHANGED_FILES
           else
-            git diff --name-only HEAD~1 | grep '\.md$' || true
-          fi)
-          if [ -n "$FILES" ]; then
-            vale $FILES
-          else
-            echo "No Markdown files changed."
+            echo "No Markdown files changed"
           fi
