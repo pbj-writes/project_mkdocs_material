@@ -1,0 +1,17 @@
+extends: existence
+message: "Consider using active voice instead of passive voice ('%s')."
+level: suggestion
+scope: sentence
+ignorecase: true
+tokens:
+  - '(?:am|is|are|was|were|be|been|being)\s+\w+ed\b'
+  - '(?:am|is|are|was|were|be|been|being)\s+\w+en\b'
+  - '\bhave\s+been\s+\w+ed\b'
+  - '\bhas\s+been\s+\w+ed\b'
+  - '\bhad\s+been\s+\w+ed\b'
+  - '\bwill\s+be\s+\w+ed\b'
+  - '\bis\s+being\s+\w+ed\b'
+  - '\bare\s+being\s+\w+ed\b'
+  - '\bwere\s+being\s+\w+ed\b'
+  - '\bhas\s+been\s+being\s+\w+ed\b'
+  - '\bhave\s+been\s+being\s+\w+ed\b'

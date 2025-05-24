@@ -1,0 +1,57 @@
+name: Vale Lint
+
+on:
+  pull_request:
+    paths:
+      - '**/*.md'
+      - '.vale.ini'
+      - '.vale/**'
+  push:
+    branches:
+      - main
+    paths:
+      - '**/*.md'
+      - '.vale.ini'
+      - '.vale/**'
+
+jobs:
+  vale:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python (for Vale if needed)
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install Vale
+        run: |
+          curl -fsSL https://github.com/errata-ai/vale/releases/latest/download/vale_Linux_amd64.tar.gz | tar -xz
+          sudo mv vale /usr/local/bin/
+
+      - name: Get changed files
+        id: changed
+        run: |
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            git fetch origin ${{ github.base_ref }}
+            git diff --name-only origin/${{ github.base_ref }}...${{ github.sha }} | grep '\.md$' || true
+          else
+            git diff --name-only HEAD~1 | grep '\.md$' || true
+          fi
+        shell: bash
+
+      - name: Run Vale on changed files
+        if: steps.changed.outputs.files != ''
+        run: |
+          FILES=$(if [ "${{ github.event_name }}" = "pull_request" ]; then
+            git fetch origin ${{ github.base_ref }}
+            git diff --name-only origin/${{ github.base_ref }}...${{ github.sha }} | grep '\.md$' || true
+          else
+            git diff --name-only HEAD~1 | grep '\.md$' || true
+          fi)
+          if [ -n "$FILES" ]; then
+            vale $FILES
+          else
+            echo "No Markdown files changed."
+          fi
