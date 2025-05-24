@@ -9,7 +9,7 @@ I'm showing off advanced stuff including:
 - Doc Linting (todo)
 - i18n/l20n (todo)
 
-## Site Tooling
+## Site tooling
 
 - Mkdocs ➡️ static site generator
 - Material ➡️ theme
