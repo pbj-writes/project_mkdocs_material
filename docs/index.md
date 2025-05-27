@@ -18,5 +18,3 @@ I'm showing off advanced stuff including:
 - GitHub Actions ➡️ automation
 - GitHub Pages ➡️ hosting
 - Vale ➡️ doc style linting
-
-The dog is bitten by the cat.
