@@ -54,8 +54,8 @@ plugins:
   - social
   - macros:
       include_yaml:
-        - product_names.yaml
-        - var_lib.yaml
+        - ./product_names.yaml
+        - ./var_lib.yaml
       include_dir: include
 
 extra:

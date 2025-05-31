@@ -36,7 +36,8 @@ jobs:
           
       - name: Copy content
         run: |
-          cp -r content_lib/* mkdocs-material-project
+          cp -r content_lib/docs/* mkdocs-material-project/docs/
+          cp -r content_lib/*.yaml mkdocs-material-project/
           
       - uses: actions/setup-python@v5
         with:
