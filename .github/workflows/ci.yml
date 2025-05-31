@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - main
+      - reuse_OT
 permissions:
   contents: write
   pages: write
