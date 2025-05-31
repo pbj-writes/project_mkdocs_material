@@ -79,6 +79,27 @@ Now, I have two (or more) products. I'll call them:
 
 ## Reuse Content from Another Repo
 
+This is not magic. In my GitHub workflow file, I pull in the content from another repo and copy it into the contents of my main repo build process so that all relevant content is available during the site build.
+
+### Example
+
+In this case, I'm pulling in all the content from my [`content_lib`](https://github.com/pbj-writes/content_lib) repo.
+
+The `content_lib` repo contains a variable library file ([`var_lib.yaml`](https://github.com/pbj-writes/content_lib/blob/main/var_lib.yaml)). The `var_lib.yaml` file contains two variable key-value pairs.
+
+```yaml
+#var_lib.yaml
+
+productName3: "PBJ's Writing Service"
+productName4: "PBJ's Bike Shop"
+```
+
+Below 👇, I have two variables that are NOT defined any where in the contain repo, `mkdocs-material-project`.
+
 {{ productName3 }}
 
 {{ productName4 }}
+
+!!! check-work "Check My Work"
+
+    Click the :material-eye: at the top of the page ⬆️
