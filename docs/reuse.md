@@ -76,3 +76,9 @@ Now, I have two (or more) products. I'll call them:
     Click the :material-eye: at the top of the page ⬆️
 
 {% include 'embed_content.md' %}
+
+## Reuse Content from Another Repo
+
+{{ productName3 }}
+
+{{ productName4 }}
