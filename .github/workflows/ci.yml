@@ -3,7 +3,6 @@ on:
   push:
     branches:
       - main
-      - reuse_OT
 permissions:
   contents: write
   pages: write
@@ -37,7 +36,7 @@ jobs:
           
       - name: Copy content
         run: |
-          cp -r content_lib/* mkdocs-material-project/docs/
+          cp -r content_lib/* mkdocs-material-project
           
       - uses: actions/setup-python@v5
         with:
