@@ -94,7 +94,7 @@ productName3: "PBJ's Writing Service"
 productName4: "PBJ's Bike Shop"
 ```
 
-Below 👇, I have two variables that are NOT defined in the contained repo, `mkdocs-material-project`. Again, these are defined in the [`content_lib`](https://github.com/pbj-writes/content_lib) repo
+Below 👇, I have two variables that are NOT defined in the contained repo, `mkdocs-material-project`. Again, these variables are defined in the [`content_lib`](https://github.com/pbj-writes/content_lib) repo.
 
 {{ productName3 }}
 
