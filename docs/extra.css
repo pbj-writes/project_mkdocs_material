@@ -43,5 +43,4 @@
 .md-status.md-status--new::before,
 .md-status.md-status--new::after {
   color: #cbe06e !important;
-  background-color: #cbe06e !important;
 }
