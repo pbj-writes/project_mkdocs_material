@@ -1,15 +1,18 @@
+---
+status: new
+---
 # Doc Linting
 
 I'm demonstrating doc linting for style and code. For linting, I'm using:
 
 - [Vale](https://vale.sh) for style checking
-- [Superlinter](https://github.com/marketplace/actions/super-linter) for code checking
+- [Super-Linter](https://github.com/marketplace/actions/super-linter) for code checking
 
 ## Why?
 
 For style, uniform content across an organization is helpful for users. When the content is uniform, the user has less cognitive load and less context switching. Also, the automation makes writers more efficient with less manual intervention or editing.
 
-For code, I want to ensure enforcement of standards and best practices. For instance, I might use packages with a particular nuance for Markdown or a plugin that does something non-standard with YAML. So, I want to customize a tool like Superlinter to find what I want it to find and ignore what I want it to ignore. Again, the automation helps with efficiency and reducing troubleshooting and downstream errors.
+For code, I want to ensure enforcement of standards and best practices. For instance, I might use packages with a particular nuance for Markdown or a plugin that does something non-standard with YAML. So, I want to customize a tool like Super-Linter to find what I want it to find and ignore what I want it to ignore. Again, the automation helps with efficiency and reducing troubleshooting and downstream errors.
 
 ## Style Linting With Vale
 
@@ -79,6 +82,6 @@ In the note, another contraction, 'There is' isn't underlined at all. This is a 
 'there is\b': "there's"
 ```
 
-## Code Linting With SuperLinter
+## Code Linting With Super-Linter
 
 TODO

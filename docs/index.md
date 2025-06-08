@@ -6,7 +6,7 @@ I'm showing off advanced stuff including:
 
 - Reuse ✅
 - Advanced Web Features (todo)
-- Doc Linting (todo)
+- Doc Linting :material-progress-wrench:{ .progress-pbj }
 - i18n/l20n (todo)
 
 ## Site Tooling

@@ -33,3 +33,8 @@
   background-color: transparent; /* Remove background color */
   font-size: inherit; /* Use the font size of the parent element */
 }
+
+.progress-pbj {
+  color: #EE0F0F;
+  size-adjust: 1.15;
+}
