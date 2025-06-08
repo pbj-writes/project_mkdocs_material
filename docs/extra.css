@@ -38,3 +38,10 @@
   color: #EE0F0F;
   size-adjust: 1.15;
 }
+
+.md-status.md-status--new,
+.md-status.md-status--new::before,
+.md-status.md-status--new::after {
+  color: #cbe06e !important;
+  background-color: #cbe06e !important;
+}
