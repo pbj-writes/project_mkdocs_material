@@ -43,4 +43,5 @@
 .md-status.md-status--new::before,
 .md-status.md-status--new::after {
   color: #cbe06e !important;
+  padding-top: 0%;
 }
