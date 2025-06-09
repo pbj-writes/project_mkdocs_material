@@ -76,7 +76,7 @@ swap:
 
 In the example, I hover over 'I am' since it's underlined in yellow, and the suggestion is available.
 
-In the note, another contraction, 'There is' isn't underlined at all. This is a gap in rule that I can address with some regex.
+In the note, another contraction, 'There is' isn't underlined at all. This is a gap in the rule that I can address with some regex.
 
 ```yaml
 'there is\b': "there's"
