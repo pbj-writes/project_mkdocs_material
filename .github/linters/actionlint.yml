@@ -1,0 +1,3 @@
+# Enable all default checks
+require:
+  - https://github.com/rhysd/actionlint/blob/main/config/default.yaml

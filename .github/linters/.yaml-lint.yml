@@ -1,0 +1,19 @@
+rules:
+  braces: enable
+  brackets: enable
+  colons: enable
+  commas: enable
+  comments: enable
+  document-end: enable
+  document-start: enable
+  empty-lines: enable
+  empty-values: enable
+  float-values: enable
+  indentation: enable
+  key-duplicates: enable
+  key-ordering: enable
+  line-length: enable
+  new-lines: enable
+  octal-values: enable
+  quotes: enable
+  trailing-spaces: enable
