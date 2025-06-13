@@ -1,18 +1,18 @@
-.md-header__button.md-logo {
+.md-header-button.md-logo {
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 0;
   padding-bottom: 0;
 }
 
-.md-header__button.md-logo img,
-.md-header__button.md-logo svg {
+.md-header-button.md-logo img,
+.md-header-button.md-logo svg {
   height: 70%;
   width: 70%;
 }
 
 :root {
-  --md-admonition-icon--check-work: "👀";
+  --md-admonition-icon-check-work: "👀";
   /* Twemoji eye emoji */
 }
 
@@ -28,13 +28,13 @@
 
 .md-typeset .check-work>.admonition-title::before,
 .md-typeset .check-work>summary::before {
-  content: var(--md-admonition-icon--check-work);
+  content: var(--md-admonition-icon-check-work);
   -webkit-mask-image: none;
   mask-image: none;
   background-color: transparent;
-  /* Remove background color */
+  /*Remove background color*/
   font-size: inherit;
-  /* Use the font size of the parent element */
+  /*Use the font size of the parent element*/
 }
 
 .progress-pbj {
@@ -42,8 +42,8 @@
   size-adjust: 1.15;
 }
 
-.md-status.md-status--new,
-.md-status.md-status--new::before,
-.md-status.md-status--new::after {
+.md-status.md-status-new,
+.md-status.md-status-new::before,
+.md-status.md-status-new::after {
   color: #cbe06e !important;
 }
