@@ -12,7 +12,8 @@
 }
 
 :root {
-  --md-admonition-icon--check-work: "👀"; /* Twemoji eye emoji */
+  --md-admonition-icon--check-work: "👀";
+  /* Twemoji eye emoji */
 }
 
 .md-typeset .admonition.check-work,
@@ -20,18 +21,20 @@
   border-color: rgb(138, 43, 155);
 }
 
-.md-typeset .check-work > .admonition-title,
-.md-typeset .check-work > summary {
-  background-color: rgba(43, 155, 70, 0.1);
+.md-typeset .check-work>.admonition-title,
+.md-typeset .check-work>summary {
+  background-color: rgb(43, 155, 70, 0.1);
 }
 
-.md-typeset .check-work > .admonition-title::before,
-.md-typeset .check-work > summary::before {
+.md-typeset .check-work>.admonition-title::before,
+.md-typeset .check-work>summary::before {
   content: var(--md-admonition-icon--check-work);
   -webkit-mask-image: none;
-          mask-image: none;
-  background-color: transparent; /* Remove background color */
-  font-size: inherit; /* Use the font size of the parent element */
+  mask-image: none;
+  background-color: transparent;
+  /* Remove background color */
+  font-size: inherit;
+  /* Use the font size of the parent element */
 }
 
 .progress-pbj {
