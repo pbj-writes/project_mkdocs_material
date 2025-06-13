@@ -24,7 +24,7 @@ I can have a style checking strategy for content:
 
 ### On My Local Machine
 
-I can use Vale CLI or I can incorporate a Vale plugin into my editor. For this demo, I am using the Vale extension for VS Code; however, other editors like the Oxygen XML Editor have a [Vale addon](https://www.oxygenxml.com/addons/com.oxygenxml.vale.plugin.html).
+I can use Vale CLI or I can incorporate a Vale plugin into my editor. For this demo, I'm using the Vale extension for VS Code; however, other editors like the Oxygen XML Editor have a [Vale addon](https://www.oxygenxml.com/addons/com.oxygenxml.vale.plugin.html).
 
 ### In the CI/CD Pipeline
 

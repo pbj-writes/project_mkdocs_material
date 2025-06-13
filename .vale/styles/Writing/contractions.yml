@@ -3,7 +3,7 @@ message: "Consider using '%s' instead of '%s' for a more conversational tone."
 level: warning
 ignorecase: true
 swap:
-  '(?<!([Ii]f|[Ww]hen|[Ww]here|[Ww]hat|[Ww]hy|[Hh]ow|[Tt]here)) is not\b': "'s not"
+  '\b(?<!(?:if|when|where|what|why|how|there|this)) is not\b': "isn't"
   'are not\b': "aren't"
   'cannot\b': "can't"
   'could not\b': "couldn't"
@@ -14,10 +14,8 @@ swap:
   'has not\b': "hasn't"
   'have not\b': "haven't"
   'I am\b': "I'm"
-  'is not\b': "isn't"
   'it is\b': "it's"
   'must not\b': "mustn't"
-  'shall not\b': "shan't"
   'should not\b': "shouldn't"
   'that is\b': "that's"
   'they are\b': "they're"
@@ -28,4 +26,3 @@ swap:
   'would not\b': "wouldn't"
   'you are\b': "you're"
   'you have\b': "you've"
-  'there is\b': "there's"

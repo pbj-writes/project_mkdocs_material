@@ -1,0 +1,8 @@
+{
+  "MD024": false,
+  "no-duplicate-heading": false,
+
+  "MD013": {
+    "line_length": 600
+  }
+}

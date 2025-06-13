@@ -30,7 +30,6 @@ I'll make up a product. I'll call it, {{ "{{ productName }}" }}.
 ```
 
 !!! check-work "Check My Work"
-
     Click the :material-eye: at the top of the page ⬆️
 
 ## Product Names (Multiple)
@@ -72,7 +71,6 @@ Now, I have two (or more) products. I'll call them:
 ```
 
 !!! check-work "Check My Work"
-
     Click the :material-eye: at the top of the page ⬆️
 
 {% include 'embed_content.md' %}
@@ -94,12 +92,11 @@ productName3: "PBJ's Writing Service"
 productName4: "PBJ's Bike Shop"
 ```
 
-Below 👇, I have two variables that are NOT defined in the contained repo, `project_mkdocs_material`. Again, these variables are defined in the [`content_lib`](https://github.com/pbj-writes/content_lib) repo.
+Below 👇, I have two variables that aren't defined in the contained repo, `project_mkdocs_material`. Again, these variables are defined in the [`content_lib`](https://github.com/pbj-writes/content_lib) repo.
 
 {{ productName3 }}
 
 {{ productName4 }}
 
 !!! check-work "Check My Work"
-
     Click the :material-eye: at the top of the page ⬆️
