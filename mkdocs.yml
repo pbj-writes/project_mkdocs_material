@@ -10,7 +10,6 @@ theme:
   favicon: assets/favicon.ico
   logo: assets/logo.png
   palette:
-
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
       primary: deep purple
@@ -21,7 +20,7 @@ theme:
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
       primary: deep purple
-      scheme: default 
+      scheme: default
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
@@ -72,12 +71,11 @@ extra_css:
   - extra.css
 
 nav:
-
-    - index.md
-    - Reuse: reuse.md
-    - Advanced Web Features: web_stuff.md
-    - Doc Linting: doc_linting.md
-    - Localization and Internationalization: loc_int.md
+  - index.md
+  - Reuse: reuse.md
+  - Advanced Web Features: web_stuff.md
+  - Doc Linting: doc_linting.md
+  - Localization and Internationalization: loc_int.md
 
 copyright: ©PBJ
 
