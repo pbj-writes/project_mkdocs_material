@@ -19,18 +19,17 @@
 
 .md-typeset .admonition.check-work,
 .md-typeset details.check-work {
-  border-color: rgb(138, 43, 155);
+  border-color: #8A2B9B;
 }
 
 .md-typeset .check-work>.admonition-title,
 .md-typeset .check-work>summary {
-  background-color: rgba(43, 155, 70, "10%");
+  background-color: #2B9B46;
 }
 
 .md-typeset .check-work>.admonition-title::before,
 .md-typeset .check-work>summary::before {
   content: var(--md-admonition-icon-check-work);
-  mask-image: none;
   mask-image: none;
   background-color: transparent;
   
