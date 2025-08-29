@@ -125,3 +125,7 @@ This is developer content.
 {% endif %}
 ```
 {% endraw %}
+
+!!! check-work "Check My Work"
+
+    Click the :material-eye: at the top of the page ⬆️
