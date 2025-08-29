@@ -116,6 +116,7 @@ This is user content.
 This is developer content.
 {% endif %}
 
+{% raw %}
 ```jinja2
 \{% if audience == "user" %}
 This is user content.
@@ -123,6 +124,7 @@ This is user content.
 This is developer content.
 \{% endif %}
 ```
+{% endraw %}
 
 ### Environment
 
@@ -132,6 +134,7 @@ This is cloud content.
 This is on-prem content.
 {% endif %}
 
+{% raw %}
 ```Jinja2
 \{% if environment == "cloud" %}
 This is cloud content.
@@ -139,3 +142,4 @@ This is cloud content.
 This is on-prem content.
 \{% endif %}
 ```
+{% endraw %}
