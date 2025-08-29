@@ -116,12 +116,12 @@ This is user content.
 This is developer content.
 {% endif %}
 
-```Jinja2
-{% if audience == "user" %}
+```jinja2
+\{% if audience == "user" %}
 This is user content.
-{% elif audience == "dev" %}
+\{% elif audience == "dev" %}
 This is developer content.
-{% endif %}
+\{% endif %}
 ```
 
 ### Environment
@@ -133,9 +133,9 @@ This is on-prem content.
 {% endif %}
 
 ```Jinja2
-{% if environment == "cloud" %}
+\{% if environment == "cloud" %}
 This is cloud content.
-{% elif environment == "on-prem" %}
+\{% elif environment == "onprem" %}
 This is on-prem content.
-{% endif %}
+\{% endif %}
 ```
