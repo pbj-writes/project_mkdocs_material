@@ -103,3 +103,21 @@ Below 👇, I have two variables that are NOT defined in the contained repo, `pr
 !!! check-work "Check My Work"
 
     Click the :material-eye: at the top of the page ⬆️
+
+## Conditions
+
+### Audience
+
+{% if audience == "user" %}
+This is user content.
+{% elif audience == "dev" %}
+This is developer content.
+{% endif %}
+
+### Environment
+
+{% if environment == "cloud" %}
+This is cloud content.
+{% elif environment == "on-prem" %}
+This is on-prem content.
+{% endif %}
