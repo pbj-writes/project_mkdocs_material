@@ -53,6 +53,8 @@ plugins:
   - search
   - social
   - macros:
+      include_yaml:
+        - ./product_names.yaml
       include_dir: include
 
 extra:
