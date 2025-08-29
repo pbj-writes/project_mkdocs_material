@@ -128,9 +128,9 @@ This is developer content.
 
 ### Environment
 
-{% if environment == "cloud" %}
+{% if env_cond.environment == "cloud" %}
 This is cloud content.
-{% elif environment == "onprem" %}
+{% elif env_cond.environment == "onprem" %}
 This is on-prem content.
 {% endif %}
 
