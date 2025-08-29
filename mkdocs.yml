@@ -53,11 +53,6 @@ plugins:
   - search
   - social
   - macros:
-      include_yaml:
-        product_names: ./product_names.yaml
-        var_lib: ./var_lib.yaml
-        audience_cond: ./audience_cond.yaml
-        env_cond: ./env_cond.yaml
       include_dir: include
 
 extra:

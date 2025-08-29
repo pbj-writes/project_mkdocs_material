@@ -118,9 +118,9 @@ This is developer content.
 
 {% raw %}
 ```jinja2
-{% if audience == "user" %}
+{% if audience_cond.audience == "user" %}
 This is user content.
-{% elif audience == "dev" %}
+{% elif audience_cond.audience == "dev" %}
 This is developer content.
 {% endif %}
 ```
