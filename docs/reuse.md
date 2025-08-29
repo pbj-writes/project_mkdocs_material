@@ -118,9 +118,9 @@ This is developer content.
 
 {% raw %}
 ```jinja2
-{% if audience_cond.audience == "user" %}
+{% if audience == "user" %}
 This is user content.
-{% elif audience_cond.audience == "dev" %}
+{% elif audience == "dev" %}
 This is developer content.
 {% endif %}
 ```
@@ -128,9 +128,9 @@ This is developer content.
 
 ### Environment
 
-{% if env_cond.environment == "cloud" %}
+{% if environment == "cloud" %}
 This is cloud content.
-{% elif env_cond.environment == "onprem" %}
+{% elif environment == "onprem" %}
 This is on-prem content.
 {% endif %}
 
