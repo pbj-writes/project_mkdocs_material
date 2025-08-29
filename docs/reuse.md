@@ -106,6 +106,8 @@ Below 👇, I have two variables that are NOT defined in the contained repo, `pr
 
 ## Conditions
 
+Perhaps you want to show or hide content in certain contexts like for certain user types or deployment types.
+
 ### Audience
 
 {% if audience == "user" %}
@@ -114,10 +116,26 @@ This is user content.
 This is developer content.
 {% endif %}
 
+```Jinja2
+{% if audience == "user" %}
+This is user content.
+{% elif audience == "dev" %}
+This is developer content.
+{% endif %}
+```
+
 ### Environment
 
+{% if environment == "cloud" %}
+This is cloud content.
+{% elif environment == "onprem" %}
+This is on-prem content.
+{% endif %}
+
+```Jinja2
 {% if environment == "cloud" %}
 This is cloud content.
 {% elif environment == "on-prem" %}
 This is on-prem content.
 {% endif %}
+```
