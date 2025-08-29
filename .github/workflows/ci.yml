@@ -1,4 +1,4 @@
-name: ci 
+name: ci
 on:
   push:
     branches:
@@ -6,7 +6,7 @@ on:
 permissions:
   contents: write
   pages: write
-  id-token: write    # Required for GitHub Pages deployment
+  id-token: write # Required for GitHub Pages deployment
 
 concurrency:
   group: "pages"
@@ -31,27 +31,27 @@ jobs:
       - name: Checkout content library
         uses: actions/checkout@v4
         with:
-          repository: pbj-writes/content_lib  # Replace with your actual username
+          repository: pbj-writes/content_lib # Replace with your actual username
           path: content_lib
-          
+
       - name: Copy content
         run: |
           cp -r content_lib/ mkdocs-material-project/
           cp -r content_lib/*.yaml mkdocs-material-project/
-          
+
       - uses: actions/setup-python@v5
         with:
           python-version: 3.x
-          
-      - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV 
-      
+
+      - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV
+
       - uses: actions/cache@v4
         with:
           key: mkdocs-material-${{ env.cache_id }}
-          path: .cache 
+          path: .cache
           restore-keys: |
             mkdocs-material-
-            
+
       - name: Install dependencies
         working-directory: mkdocs-material-project
         run: |
@@ -60,19 +60,19 @@ jobs:
               mkdocs-macros-plugin \
               cairosvg \
               pillow
-              
+
       - name: Build site
         working-directory: mkdocs-material-project
         run: mkdocs build
-        
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
-        
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: 'mkdocs-material-project/site'
-          
+          path: "mkdocs-material-project/site"
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

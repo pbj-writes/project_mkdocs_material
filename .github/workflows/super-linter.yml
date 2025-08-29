@@ -29,5 +29,7 @@ jobs:
       - name: Super-linter
         uses: super-linter/super-linter@v7.4.0 # x-release-please-version
         env:
+          LINTER_RULES_PATH: .github/linters
+          FILTER_REGEX_INCLUDE: '.*(\.md|\.yml|\.yaml|\.css)$'
           # To report GitHub Actions status checks
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

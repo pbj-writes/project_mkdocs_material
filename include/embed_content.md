@@ -28,5 +28,4 @@ Adding the content reference inline.
 ```
 
 !!! check-work "Check My Work"
-
     Click the :material-eye: at the top of the page ⬆️
