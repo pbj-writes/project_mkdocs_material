@@ -125,21 +125,3 @@ This is developer content.
 {% endif %}
 ```
 {% endraw %}
-
-### Environment
-
-{% if environment == "cloud" %}
-This is cloud content.
-{% elif environment == "onprem" %}
-This is on-prem content.
-{% endif %}
-
-{% raw %}
-```Jinja2
-{% if environment == "cloud" %}
-This is cloud content.
-{% elif environment == "onprem" %}
-This is on-prem content.
-{% endif %}
-```
-{% endraw %}
