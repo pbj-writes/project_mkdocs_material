@@ -118,28 +118,28 @@ This is developer content.
 
 {% raw %}
 ```jinja2
-\{% if audience == "user" %}
+{% if audience == "user" %}
 This is user content.
-\{% elif audience == "dev" %}
+{% elif audience == "dev" %}
 This is developer content.
-\{% endif %}
+{% endif %}
 ```
 {% endraw %}
 
 ### Environment
 
-{% if environment == "cloud" %}
+{% if env_cond.environment == "cloud" %}
 This is cloud content.
-{% elif environment == "onprem" %}
+{% elif env_cond.environment == "onprem" %}
 This is on-prem content.
 {% endif %}
 
 {% raw %}
 ```Jinja2
-\{% if environment == "cloud" %}
+{% if environment == "cloud" %}
 This is cloud content.
-\{% elif environment == "onprem" %}
+{% elif environment == "onprem" %}
 This is on-prem content.
-\{% endif %}
+{% endif %}
 ```
 {% endraw %}
