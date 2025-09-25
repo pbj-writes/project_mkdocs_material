@@ -1,6 +1,3 @@
----
-status: new
----
 # Doc Linting
 
 I'm demonstrating doc linting for style and code. For linting, I'm using:

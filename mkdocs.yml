@@ -59,6 +59,8 @@ plugins:
         - ./audience_cond.yaml
         - ./env_cond.yaml
       include_dir: include
+      module_name: main
+      verbose: true
 
 extra:
   generator: false
@@ -77,7 +79,7 @@ nav:
 
     - index.md
     - Reuse: reuse.md
-    - Advanced Web Features: web_stuff.md
+    - Advanced Features: web_stuff.md
     - Doc Linting: doc_linting.md
     - Localization and Internationalization: loc_int.md
 

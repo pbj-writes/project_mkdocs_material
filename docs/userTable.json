@@ -1,0 +1,9 @@
+{ 
+    "locale": "en-US", 
+    "translations": { 
+        "user.table.name": "Name", 
+        "user.table.location": "City, State",
+        "user.table.email": "Email",
+        "user.table.username": "Username"
+    } 
+}

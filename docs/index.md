@@ -5,7 +5,7 @@ This is one of my portfolio projects.
 I'm showing off advanced stuff including:
 
 - Reuse ✅
-- Advanced Web Features (todo)
+- Advanced Web Features :material-progress-wrench:{ .progress-pbj }
 - Doc Linting :material-progress-wrench:{ .progress-pbj }
 - i18n/l20n (todo)
 
