@@ -35,3 +35,7 @@ In the documentation, the user table needs some conceptual and reference explana
 | {{ t("user.table.location") }} | The user city and state. | ✅ |
 | {{ t("user.table.email") }} | The user email address and unique identifier. Request an email change from your admin. | ❌ |
 | {{ t("user.table.username") }} | The user selected display name. | ✅ |
+
+!!! check-work "Check My Work"
+
+    Click the :material-eye: at the top of the page ⬆️

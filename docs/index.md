@@ -2,10 +2,10 @@
 
 This is one of my portfolio projects.
 
-I'm showing off advanced stuff including:
+I'm showing off doc knowledge including:
 
 - Reuse ✅
-- Advanced Web Features :material-progress-wrench:{ .progress-pbj }
+- Advanced Features :material-progress-wrench:{ .progress-pbj }
 - Doc Linting :material-progress-wrench:{ .progress-pbj }
 - i18n/l20n (todo)
 
