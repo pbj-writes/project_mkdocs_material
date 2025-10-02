@@ -23,7 +23,7 @@ In this example, strings are externalized in a JSON file and the Macros plugin e
 }
 ```
 
-In the UI, imagine a user table where teammates can see each other's information on on a user table.
+In the UI, imagine a user table where teammates can see each other's information on a user table.
 
 In the documentation, the user table needs some conceptual and reference explanation.
 
